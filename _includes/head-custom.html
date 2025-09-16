@@ -1,0 +1,36 @@
+
+
+
+<nav style="display:flex; align-items:center; justify-content:space-between; margin-bottom:1.5rem; padding:0.5rem 1rem; background-color:#F8F8F8;">
+
+  
+  <!-- Logo on the left -->
+  <a href="{{ '/' | relative_url }}">
+    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Club Logo" style="height:50px;">
+  </a>
+
+  <!-- Links on the right -->
+  <ul style="list-style:none; display:flex; gap:1.5rem; margin:0; padding:0;">
+    <li>
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}style="text-decoration:underline;"{% endif %}>Home</a>
+    </li>
+    <li>
+      <a href="{{ '/contact/' | relative_url }}" {% if page.url == '/contact/' %}style="text-decoration:underline;"{% endif %}>Contact</a>
+    </li>
+    <li>
+      <a href="{{ '/events/' | relative_url }}" {% if page.url == '/events/' %}style="text-decoration:underline;"{% endif %}>Events</a>
+    </li>
+    <li>
+      <a href="{{ '/projects/' | relative_url }}" {% if page.url == '/projects/' %}style="text-decoration:underline;"{% endif %}>Projects</a>
+    </li>
+    <li>
+      <a href="{{ '/resources/' | relative_url }}" {% if page.url == '/resources/' %}style="text-decoration:underline;"{% endif %}>Resources</a>
+    </li>
+    <li>
+      <a href="{{ '/blog/' | relative_url }}" {% if page.url == '/blog/' %}style="text-decoration:underline;"{% endif %}>Blog</a>
+    </li>
+    <li>
+      <a href="{{ '/hours/' | relative_url }}" {% if page.url == '/hours/' %}style="text-decoration:underline;"{% endif %}>Hours</a>
+    </li>
+  </ul>
+</nav>
