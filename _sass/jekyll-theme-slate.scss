@@ -45,8 +45,8 @@ Theme Styles
 
 body {
   box-sizing: border-box;
-  color:#9e1b32;
-  background: #ffffff;
+  color:#000000; /*Date and post text color*/
+  background: #9E1B32; /*This is that weird strip between the very top kind of below the navbar*/
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -56,7 +56,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
-  color:#222222;
+  color:#ffffff; /*idfk what this colors*/
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
@@ -93,12 +93,12 @@ p {
 }
 
 footer p {
-  color: #f2f2f2;
+  color: #ffffff; /*footer text*/
 }
 
 a {
   text-decoration: none;
-  color: #0F79D0;
+  color: #000000; /*Title of the middle block (welcome to Jekyll)*/
   text-shadow: none;
 
   transition: color 0.5s ease;
@@ -118,7 +118,7 @@ a:hover, a:focus {
 }
 
 footer a {
-  color: #F2F2F2;
+  color: #9E1B32; /* hyper links in footer*/
   text-decoration: underline;
 }
 
@@ -229,7 +229,7 @@ hr {
 }
 
 table {
-  border: 1px solid #373737;
+  border: 1px solid #373737; /*idk*/
   margin-bottom: 20px;
   text-align: left;
  }
@@ -237,17 +237,17 @@ table {
 th {
   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
-  background: #373737;
-  color: #fff;
+  background: #373737; /*idk*/
+  color: #fff; /*idk*/
  }
 
 td {
   padding: 10px;
-  border: 1px solid #373737;
+  border: 1px solid #373737; /*idk*/
  }
 
 form {
-  background: #f2f2f2;
+  background: #f2f2f2; /*idk*/
   padding: 20px;
 }
 
@@ -296,12 +296,13 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
+  background: #ffffff;
+  /*Commented this out to make the backround behind TheOPSLab white for now (middle chunk) */
+  /*background: -moz-linear-gradient(top, #373737, #212121);
   background: -webkit-linear-gradient(top, #373737, #212121);
   background: -ms-linear-gradient(top, #373737, #212121);
   background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(to top, #373737, #212121);
+  background: linear-gradient(to top, #373737, #212121);*/
 }
 
 #header_wrap .inner {
@@ -310,18 +311,18 @@ Full-Width Styles
 
 #project_title {
   margin: 0;
-  color: #fff;
+  color: #000000; /*project title (The OPSLab)*/
   font-size: 42px;
   font-weight: 700;
-  text-shadow: #111 0px 0px 10px;
+  /*text-shadow: #111 0px 0px 10px; SHADOW REMOVED */
 }
 
 #project_tagline {
-  color: #fff;
+  color: #000000; /*Info under project title8*/
   font-size: 24px;
   font-weight: 300;
   background: none;
-  text-shadow: #111 0px 0px 10px;
+  /*text-shadow: #111 0px 0px 10px; SHADOW REMOVED */
 }
 
 #downloads {
@@ -364,9 +365,9 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-  background: #f2f2f2;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
+  background: #ffffff; /*Post section backround color*/
+  border-top: 1px solid #ffffff; /*Border Lines*/
+  border-bottom: 1px solid #ffffff; /*Border lines*/
 }
 
 #main_content {
