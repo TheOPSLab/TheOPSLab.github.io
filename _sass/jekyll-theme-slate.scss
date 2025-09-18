@@ -15,7 +15,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+menu, output, ruby, section, summary, /*removed nav after menu*/
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -29,6 +29,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
+nav{
+  height: 80px; /* thicker navbar */
+  display: flex;
+  align-items: flex-end; /* align links to bottom */
+  padding: 0 20px;
+}
+
+
 
 ol, ul {
   list-style: none;
@@ -46,7 +55,7 @@ Theme Styles
 body {
   box-sizing: border-box;
   color:#000000; /*Date and post text color*/
-  background: #9E1B32; /*This is that weird strip between the very top kind of below the navbar*/
+  background: #ffffff; /*This is that weird strip between the very top kind of below the navbar*/
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
