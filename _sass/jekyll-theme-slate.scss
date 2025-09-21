@@ -60,6 +60,12 @@ body {
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  /*Added below hoping to fix spacing issue*/
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -141,17 +147,18 @@ strong {
 
 img {
   position: relative;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   max-width: 739px;
-  padding: 5px;
-  margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb;
+  padding: 2px;
+  margin: 20px 10px 10px 10px;
+  /*border: 1px solid #ebebeb;*/
 
+  /*Removed Image Shadows
   box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 5px #ebebeb;
   -moz-box-shadow: 0 0 5px #ebebeb;
   -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
+  -ms-box-shadow: 0 0 5px #ebebeb;*/
 }
 
 p img {
@@ -377,6 +384,8 @@ Full-Width Styles
   background: #ffffff; /*Post section backround color*/
   border-top: 1px solid #ffffff; /*Border Lines*/
   border-bottom: 1px solid #ffffff; /*Border lines*/
+  /*added below to fix footer issue*/
+  flex: 1;
 }
 
 #main_content {
