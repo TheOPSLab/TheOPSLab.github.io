@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+
+
+<h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+<h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+
+{%- if site.posts.size > 0 -%}
+
+
+
+<ul class="post-list">
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %v" -%}
+{%- for post in site.posts -%}
+<li>
+<span class="post-meta">{{ post.date | date: date_format }}</span>
+<h3>
+    <a class="post-link" href="{{ post.url | relative_url }}">
+    {{ post.title | escape }}
+    </a>
+</h3>
+    {{ post.excerpt }}
+</li>
+{%- endfor -%}
+</ul>
+{%- endif -%}

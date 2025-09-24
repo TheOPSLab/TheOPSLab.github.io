@@ -1,0 +1,91 @@
+<style>
+  .navbar {
+    display: flex; 
+    align-items: flex-end;
+    justify-content: space-between; 
+    margin-bottom: 1.5rem; 
+    padding: 1rem 1.5rem;
+    background-color: #9E1B32;
+    height: 90px;
+  }
+  
+  .nav-logo {
+    margin-right: 2rem;
+  }
+  
+  .nav-list {
+    list-style: none; 
+    display: flex; 
+    gap: 2rem;
+    margin: 0; 
+    padding: 0;
+    align-items: flex-end;
+  }
+  
+  .nav-link {
+    font-weight: bold; 
+    font-size: 1.25rem; 
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-link.active {
+    text-decoration: underline;
+  }
+</style>
+
+<nav class="navbar">
+  <a href="{{ '/' | relative_url }}" class="nav-logo">
+    <img 
+      src="{{ '/assets/images/logo.png' | relative_url }}" 
+      alt="Club Logo" 
+      style="height:80px;"
+    >
+  </a>
+
+  <ul class="nav-list">
+    <li>
+      <a href="{{ '/' | relative_url }}" 
+         class="nav-link {% if page.url == '/' %}active{% endif %}">
+         Home
+      </a>
+    </li>
+    <li>
+      <a href="{{ '/events/' | relative_url }}" 
+         class="nav-link {% if page.url == '/events/' %}active{% endif %}">
+         Events
+      </a>
+    </li>
+    <li>
+      <a href="{{ '/contact/' | relative_url }}" 
+         class="nav-link {% if page.url == '/contact/' %}active{% endif %}">
+         Contact
+      </a>
+    </li>
+    <li>
+      <a href="{{ '/projects/' | relative_url }}" 
+         class="nav-link {% if page.url == '/projects/' %}active{% endif %}">
+         Projects
+      </a>
+    </li>
+    <li>
+      <a href="{{ '/blog/' | relative_url }}" 
+         class="nav-link {% if page.url == '/blog/' %}active{% endif %}">
+         Blog
+      </a>
+    </li>
+    <li>
+      <a href="{{ '/resources/' | relative_url }}" 
+         class="nav-link {% if page.url == '/resources/' %}active{% endif %}">
+         Resources
+      </a>
+    </li>
+    <li>
+      <a href="{{ '/hours/' | relative_url }}" 
+         class="nav-link {% if page.url == '/hours/' %}active{% endif %}">
+         Hours
+      </a>
+    </li>
+    <!-- Repeat for other links -->
+  </ul>
+</nav>
